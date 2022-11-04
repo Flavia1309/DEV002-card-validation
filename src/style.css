@@ -3,11 +3,17 @@ html, body{
 }
 p { text-align : center}
 p {color: #FFE66D}
-div {
-    background-color: hotpink;
+
+.contenedor{
+    background-color: #FF6B6B;
     width: 300px;
     border: 10px solid black;
     padding: 100px;
     margin: 50px 450px;
-    
+
 }
+
+
+   
+
+    
