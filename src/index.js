@@ -25,6 +25,15 @@ function validar_tarjeta(){
 if (sum = "1","2","3","4","5","6","7","8","9")
 alert("tarjeta invalida")
 }
+function validador.isValid(Numerodetarjeta){
+    if (sum = "1","2","3","4","5","6","7","8","9")
+}
+
+function validador.maskify(Numerodetarjeta){
+    maskify('4345591228620153') === '############0153'
+}
+
+
 
 
 
