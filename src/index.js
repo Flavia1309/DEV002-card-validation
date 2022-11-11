@@ -1,40 +1,22 @@
 import validator from './validator.js'
 //Implementación en Javascript del algoritmo de luhn, con funciones de cálculo y validación
-function luhn_checksum(code) {
- var len = code.length
- var parity = len % 2
- var sum = 0
- for (var i = len-1; i>= 0; i--){
- var d = parseInt(code.charAt(i))
- if (i % 2 == parity) { d *= 2 }
- if (d > 9) { d -= 9}
- sum += d
-}
- return sum % 10
-}
-//Devolver el codigo completo (incluido el digito de control), a partir del código especificado
-function luhn_validate(fullcode){
-    return luhn_checksum(fullcode) == 0
-}
-//Devolver respuesta
-function validar_tarjeta(){
-if (sum = 0)
-alert("tarjeta valida")
-}
-function validar_tarjeta(){
-if (sum = "1","2","3","4","5","6","7","8","9")
-alert("tarjeta invalida")
-}
-function validador.isValid(Numerodetarjeta){
-    if (sum = "1","2","3","4","5","6","7","8","9")
-}
+const botonEnviar= document.getElementById("btnEnviar")
+botonEnviar.addEventListener("click", function(e){
+    e.preventDefault();//Implelmentar mi boton de validar
+});
+const numeromakify= document.getElementById("numeromaskify");
+    console.log (numeromakify)//implementar que arroje los primeros 12 numeros con el signo #
 
-function validador.maskify(Numerodetarjeta){
-    maskify('4345591228620153') === '############0153'
-}
+    let creditNumber = document.getElementById(creditNumber).value;//declaro la variable para validar
 
+    //Si la tarjeta es valida, aparecen los numero ocultos, si no es valida aparece tu tarjeta no es valida
+   if (validator.isValid(creditNumber)) {
+      alert("validar tarjeta numero de tarjeta");  
+    } else {
+      alert("Tu tarjeta es Inválida");
+};
 
+creditNumber.addEventListener("Keyup",function() {
 
-
-
-console.log(validator);
+const traermaskify = validator.maskify(creditNumber.value)    
+});
