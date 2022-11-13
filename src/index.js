@@ -9,14 +9,14 @@ const numeromakify= document.getElementById("numeromaskify");
 
     let creditNumber = document.getElementById(creditNumber).value;//declaro la variable para validar
 
-    //Si la tarjeta es valida, aparecen los numero ocultos, si no es valida aparece tu tarjeta no es valida
+    //Si la tarjeta es valida, aparecen los numeros ocultos, si no es valida aparece tu tarjeta no es valida
    if (validator.isValid(creditNumber)) {
       alert("validar tarjeta numero de tarjeta");  
     } else {
       alert("Tu tarjeta es Inválida");
 };
 
-creditNumber.addEventListener("Keyup",function() {
+creditNumber.addEventListener("Onkeyup", function() {
 
 const traermaskify = validator.maskify(creditNumber.value)    
 });
