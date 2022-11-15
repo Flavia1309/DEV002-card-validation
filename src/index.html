@@ -2,20 +2,23 @@
 <html>
 
 <head>
-</head>
+
 <meta charset="utf-8">
 <title>Card Validation</title>
 <link rel="stylesheet" href="style.css" />
-
+</head>
 <body>
   <h1>Home Style</h1>
   <h2>Para continuar con su compra indiquenos su numero de tarjeta</h2>
 
-  <div class="contenedor">
+  <div class="contenedor" >
     <form>
       <div class="inputbox">
         <span>Numero de tarjeta</span>
+
         <input type="text" id="creditNumber" maxlength="16" class="Número-de-tarjeta-input">
+        <span id="numeroMaskify" class="numeroMaskify"></span> <br> <br>
+
       </div>
       <div class="inputbox">
         <span>Nombre titular</span>
