@@ -16,7 +16,7 @@ botonEnviar.addEventListener("click", function () {
   if (validator.isValid(numerosTarjetaCredito)) {
     alert("Tu tarjeta " + validator.maskify(numeroTarjeta.value) + " es válida");
   } else {
-    alert("Tu tarjeta " + validator.maskify(ccNumber.value) + " es Inválida");
+    alert("Tu tarjeta " + validator.maskify(numeroTarjeta.value) + " es Inválida");
   }
   
   });
