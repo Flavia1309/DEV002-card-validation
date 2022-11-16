@@ -34,7 +34,7 @@ const validator = {
   },
   // regresa una copia de los números de mi CC. .slice extrae una sección del string y lo devuelve como un nuevo string sin modificar el original. 0 indica el primer elemento, -4 indica desplazamiento desde el final del array, extrae los 4 últimos elementos del array. .replace, reemplaza de forma global por un #
   maskify: (creditNumber) => {
-  return creditNumber.slice(0, -4).replace(/./g, '#') + creditNumber.slice(-4)
+  return creditNumber.slice(0, -4).replace(/./g, '#') + creditNumber.slice(-4)//Expresion regular, hace una busqueda dentro del string y reemplaza los digitos menos los 4 Ultimos, una expresion regular es una funcion en corto
 }
 }
 export default validator;
