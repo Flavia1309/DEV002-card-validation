@@ -1,34 +1,34 @@
-const validator = {
-  isValid: (creditNumber) => {
-  const length = creditNumber.length;  //longitud de string
-  let agregarDigitos = 0;
+//const validator = {
+ // isValid: (creditNumber) => {
+ // const length = creditNumber.length;  //longitud de string
+ // let agregarDigitos = 0;
   //si la cantidad de dígitos, al sacar módulo(%) 2 da como resultado 0
-  if(length % 2 == 0) 
-  {
+ // if(length % 2 == 0) 
+ // {
       // Comienza al inicio del numero y duplica a partir del primer número
-      for(let i = 0; i < length; i++)
-      {
-          let digitoActual = parseInt(creditNumber[i]);
-          if (i % 2 == 0) //tomar posiciones pares
+      //for(let i = 0; i < length; i++)
+     // {
+         // let digitoActual = parseInt(creditNumber[i]);
+          //if (i % 2 == 0) //tomar posiciones pares
           //si el digito actual multiplicado x 2 es mayor que 9
-          {
-              if ((digitoActual *= 2) > 9)
-              {
+         // {
+             // if ((digitoActual *= 2) > 9)
+             // {
                   // Separar los valores de 2 digitos para después sumarlos
-                  let primerNumero = parseInt(digitoActual / 10); //identifica el primer numero de currentDigit tomando el entero, es decir 1 p. ej 16 / 10 = 1.6 = 1
-                  let ultimoNumero = digitoActual % 10; //identifica el ultimo número de current digit con modulo 10 p ej, 16 mod 10 = 6
+                 // let primerNumero = parseInt(digitoActual / 10); //identifica el primer numero de currentDigit tomando el entero, es decir 1 p. ej 16 / 10 = 1.6 = 1
+                 // let ultimoNumero = digitoActual % 10; //identifica el ultimo número de current digit con modulo 10 p ej, 16 mod 10 = 6
                   //confirmar x console log si/en donde se guarda
                   // suma el primero y último número de currentDigit
-                  digitoActual = primerNumero + ultimoNumero;
-              }
-          }
+                 // digitoActual = primerNumero + ultimoNumero;
+            //  }
+         // }
           //suma todos los dígitos de la tarjeta
-          agregarDigitos += digitoActual; //consolidar agregarDigitos | Qué pasa con los impares y menores a 9?
-      }
-  }
+         // agregarDigitos += digitoActual; //consolidar agregarDigitos | Qué pasa con los impares y menores a 9?
+      //}
+ // }
     // creo otra constante para alojar la suma de los dígitos, ver si el total sacando su módulo es === a 0,
     //al ser typeOf retorna un tipo de dato primitivo, si no es true, entonces devuelve false
-    const total = (agregarDigitos % 10) ===0
+   /* const total = (agregarDigitos % 10) ===0
     console.log(total, agregarDigitos)
       return total
   },

@@ -1,4 +1,4 @@
-import validator from './validator.js'
+/*mport validator from './validator.js'
 //Implementación en Javascript del algoritmo de luhn, con funciones de cálculo y validación
 
 const numeroTarjeta = document.getElementById('creditNumber')
@@ -10,7 +10,7 @@ botonEnviar.addEventListener("click", function () {
   /*const numeromakify= document.getElementById("numeromaskify");
       console.log (numeromakify)//implementar que arroje los primeros 12 numeros con el signo #*/
 
-  let numerosTarjetaCredito = document.getElementById("creditNumber").value;//declaro la variable para validar
+  /*let numerosTarjetaCredito = document.getElementById("creditNumber").value;//declaro la variable para validar
 
   //Si la tarjeta es valida, aparecen los numeros ocultos, si no es valida aparece tu tarjeta no es valida
   if (validator.isValid(numerosTarjetaCredito)) {
